@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 1.5rem;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.header__menu-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header__title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
