@@ -8,6 +8,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h2 {
+    color:#ff4444; 
+}
+
+p {
+    text-align: justify;
+    /* hyphens: auto; */
+}
+
 /* =========================
    HEADER
 ========================= */
@@ -20,6 +29,12 @@
     padding: 10px;
     background: #222;
     position: relative;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
 }
 
 /* =========================
@@ -104,6 +119,56 @@
 }
 
 /* =========================
+   SUBMENU EPISODI
+========================= */
+
+.submenu-container {
+    position: relative;
+}
+
+.submenu-title {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: #ff9900;
+}
+
+.submenu-title:hover {
+    background: #444;
+}
+
+#submenu-toggle {
+    display: none;
+}
+
+.submenu {
+    list-style: none;
+    background: #444;
+    padding: 8px 0;
+    display: none;
+    position: relative;
+    border-radius: 6px;
+}
+
+.submenu li {
+    padding: 8px 12px;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li:hover {
+    background: #555;
+}
+
+/* Mostra submenu quando il checkbox è attivo */
+#submenu-toggle:checked ~ .submenu {
+    display: block;
+}
+
+/* =========================
    IMMAGINI HEADER
 ========================= */
 .img-header {
@@ -119,6 +184,25 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.container-production {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1500px; 
+    margin: 0 auto;
+    padding: 25px;
+    gap: 20px;
+}
+
+.item {
+    flex: 1 1 45%;
+    background: #2b2b2b;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 /* =========================
@@ -218,4 +302,50 @@
     .character-photo {
         width: 70%;
     }
+
+    .container-production {
+        flex-direction: column;
+    }
+
+    .container-production .item {
+        flex: 1 1 100%;
+    }
+}
+
+/* scroll fluido globale */
+html {
+    scroll-behavior: smooth;
+}
+
+/* bottone torna su */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+
+    border-radius: 50%;
+    background-color: #1f1f1f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+    background-color: #333;
+}
+
+.back-to-top img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1); /* utile se SVG nero */
 }

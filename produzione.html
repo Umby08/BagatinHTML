@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Produzione</title>
 </head>
+
+<a href="#top" class="back-to-top" aria-label="Torna in cima">
+    <img src="immagini/backtotop.svg" alt="">
+</a>
+
 <body>
     <header class="header">
         <div class="brand">
@@ -23,17 +28,114 @@
 
             <!-- Dropdown menu -->
             <ul class="dropdown">
+                <li><a href="produzione.html">Produzione</a></li>
                 <li><a href="personaggi.html">Personaggi</a></li>
                 <li><a href="SerialKiller.html">Serial Killer</a></li>
+            
+                <!-- EPISODI con submenu -->
+                <li class="submenu-container">
+                    <label for="submenu-toggle" class="submenu-title">Episodi</label>
+                    <input type="checkbox" id="submenu-toggle">
+                
+                    <ul class="submenu">
+                        <li><a href="stagione1.html">Stagione 1</a></li>
+                        <li><a href="stagione2.html">Stagione 2</a></li>
+                    </ul>
+                </li>
+                
+            </ul>            
+                
             </ul>
         </div>
 
         <div>
             <a href="https://www.netflix.com/title/70136123">
-                <img src="logo-netflix.svg" alt="" class="img-header">
+                <img src="immagini/logo-netflix.svg" alt="" class="img-header">
             </a>
         </div>
     </header>
+
+    <main>
+        <div class="container-production">
+
+            <div class="item">
+                <h2>Ideazione e sviluppo della serie</h2>
+                <p>
+                    La serie televisiva Bones nasce da un'idea di Hart Hanson, sviluppata per il network
+                    Fox nei primi anni Duemila. Il progetto prese forma quando il produttore Barry
+                    Josephson acquisì i diritti per realizzare un prodotto ispirato al lavoro
+                    dell'antropologa forense e scrittrice Kathy Reichs. Hanson, dopo essersi documentato
+                    sul suo lavoro scientifico e narrativo, scrisse l'episodio pilota, ponendo le basi
+                    di una serie che unisse investigazione criminale, scienza forense e sviluppo dei
+                    personaggi.
+                </p>
+            </div>
+
+            <div class="item">
+                <h2>Il rapporto con i romanzi di Kathy Reichs</h2>
+                <p>
+                    Bones è liberamente ispirata ai romanzi di Kathy Reichs, incentrati sul personaggio
+                    di Temperance Brennan. Tuttavia, la serie non adatta direttamente le trame dei libri:
+                    utilizza piuttosto il personaggio principale, la sua professione e l'ambiente
+                    scientifico come punto di partenza per storie originali. La Brennan televisiva è
+                    concepita come una versione più giovane e diversa rispetto a quella letteraria,
+                    con un carattere più rigido dal punto di vista emotivo e una collocazione
+                    geografica differente, scelta per adattarsi meglio al contesto televisivo
+                    statunitense.
+                </p>
+            </div>
+
+            <div class="item">
+                <h2>Il ruolo di Kathy Reichs nella produzione</h2>
+                <p>
+                    Kathy Reichs ha partecipato attivamente alla produzione della serie in qualità di
+                    consulente scientifica. Il suo contributo è stato fondamentale per garantire una
+                    rappresentazione credibile dell'antropologia forense, delle procedure di laboratorio
+                    e dell'analisi dei resti umani. Reichs ha più volte descritto la serie come una sorta
+                    di “prequel ideale” dei suoi romanzi, sottolineando come la Temperance Brennan
+                    televisiva rappresenti una fase precedente della carriera del personaggio
+                    letterario.
+                </p>
+            </div>
+
+            <div class="item">
+                <h2>Scelte stilistiche e identità della serie</h2>
+                <p>
+                    Per distinguersi da altri procedural forensi dell'epoca, come CSI, gli autori di
+                    Bones puntarono su un tono che alternasse dramma, ironia e introspezione psicologica.
+                    Grande attenzione fu data ai dialoghi e alle dinamiche relazionali, in particolare
+                    al contrasto tra l'approccio razionale e scientifico di Brennan e quello più
+                    istintivo e umano di Booth. Dal punto di vista visivo, la serie introdusse soluzioni
+                    narrative e tecnologiche originali, come le ricostruzioni tridimensionali dei corpi
+                    e delle scene del crimine.
+                </p>
+            </div>
+
+            <div class="item">
+                <h2>Debutto e successo televisivo</h2>
+                <p>
+                    Bones ha debuttato sul network Fox il 13 settembre 2005. Fin dalle prime stagioni ha
+                    ottenuto un buon riscontro di pubblico, rafforzato dalla chimica tra i protagonisti
+                    e dalla capacità della serie di bilanciare casi autoconclusivi e archi narrativi di
+                    lunga durata. Questo successo ha permesso allo show di rinnovarsi stagione dopo
+                    stagione, mantenendo una solida base di spettatori.
+                </p>
+            </div>
+
+            <div class="item">
+                <h2>Evoluzione e longevità</h2>
+                <p>
+                    Nel corso delle sue dodici stagioni, concluse nel 2017, Bones ha ampliato
+                    progressivamente il proprio universo narrativo, introducendo nuovi personaggi e
+                    approfondendo tematiche personali, etiche e professionali. Pur rimanendo ancorata
+                    al formato del crime procedurale, la serie ha dato sempre più spazio all'evoluzione
+                    emotiva dei protagonisti, trasformandosi da semplice serie investigativa a racconto
+                    corale sul rapporto tra scienza, giustizia e relazioni umane.
+                </p>
+            </div>
+
+        </div>
+    </main>
 
 </body>
 </html>

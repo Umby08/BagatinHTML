@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Stagione 1</title>
 </head>
+
+<a href="#top" class="back-to-top" aria-label="Torna in cima">
+    <img src="immagini/backtotop.svg" alt="">
+</a>
+
 <body>
-    
+    <header class="header">
+        <div class="brand">
+            <!-- Checkbox per menu -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <img src="immagini/menu-icon.svg" alt="Menu">
+            </label>
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <span class="bones">Bones</span>
+                <span class="wiki">Wiki</span>
+            </a>
+
+            <!-- Dropdown menu -->
+            <ul class="dropdown">
+                <li><a href="produzione.html">Produzione</a></li>
+                <li><a href="personaggi.html">Personaggi</a></li>
+                <li><a href="SerialKiller.html">Serial Killer</a></li>
+            
+                <!-- EPISODI con submenu -->
+                <li class="submenu-container">
+                    <label for="submenu-toggle" class="submenu-title">Episodi</label>
+                    <input type="checkbox" id="submenu-toggle">
+                
+                    <ul class="submenu">
+                        <li><a href="stagione1.html">Stagione 1</a></li>
+                        <li><a href="stagione2.html">Stagione 2</a></li>
+                    </ul>
+                </li>
+                
+            </ul>            
+                
+            </ul>
+        </div>
+
+        <div>
+            <a href="https://www.netflix.com/title/70136123">
+                <img src="immagini/logo-netflix.svg" alt="" class="img-header">
+            </a>
+        </div>
+    </header>
 </body>
-</html>
