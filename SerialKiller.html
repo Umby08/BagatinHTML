@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
 </a>
 
 <body>
+
     <header class="header">
         <div class="brand">
             <!-- Checkbox per menu -->
@@ -30,6 +31,21 @@
             <ul class="dropdown">
                 <li><a href="produzione.html">Produzione</a></li>
                 <li><a href="personaggi.html">Personaggi</a></li>
+                <li><a href="SerialKiller.html">Serial Killer</a></li>
+            
+                <!-- EPISODI con submenu -->
+                <li class="submenu-container">
+                    <label for="submenu-toggle" class="submenu-title">Episodi</label>
+                    <input type="checkbox" id="submenu-toggle">
+                
+                    <ul class="submenu">
+                        <li><a href="stagione1.html">Stagione 1</a></li>
+                        <li><a href="stagione2.html">Stagione 2</a></li>
+                    </ul>
+                </li>
+                
+            </ul>            
+                
             </ul>
         </div>
 
@@ -40,7 +56,90 @@
         </div>
     </header>
 
-    <main>
+<main class="container">
 
-    </main>
+    <p style="color:#000000; margin-bottom:30px;">
+        Nel corso delle sue dodici stagioni, <strong>Bones</strong> presenta diversi serial killer ricorrenti 
+        che hanno lasciato un segno profondo nella narrazione. Qui trovi una panoramica dei principali 
+        antagonisti che hanno messo alla prova il Jeffersonian e l'FBI.
+    </p>
+
+    <!-- Epps -->
+    <section class="character-card">
+        <div class="character-header">
+            <img src="immagini/epps.webp" alt="Howard Epps" class="character-photo">
+            <div class="character-info">
+                <h2>Howard Epps</h2>
+                <p>
+                    Uno dei primi e più inquietanti serial killer della serie. Epps è un manipolatore 
+                    brillante che riesce a influenzare eventi anche da dietro le sbarre, diventando una 
+                    minaccia costante per Brennan e Booth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gravedigger -->
+    <section class="character-card">
+        <div class="character-header">
+            <img src="immagini/gravedigger.webp" alt="The Gravedigger" class="character-photo">
+            <div class="character-info">
+                <h2>Il Becchino</h2>
+                <p>
+                    Un rapitore seriale che seppellisce vive le sue vittime chiedendo un riscatto. 
+                    Heather Taffet, la sua identità, è responsabile di alcuni degli episodi più tesi 
+                    e drammatici dell'intera serie.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gormogon -->
+    <section class="character-card">
+        <div class="character-header">
+            <img src="immagini/gormogon.webp" alt="Gormogon" class="character-photo">
+            <div class="character-info">
+                <h2>Gormogon</h2>
+                <p>
+                    Un assassino cannibale legato a un antico culto segreto. La sua presenza porta 
+                    a uno dei tradimenti più scioccanti della serie e rappresenta una minaccia tanto 
+                    ideologica quanto fisica.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Broadsky -->
+    <section class="character-card">
+        <div class="character-header">
+            <img src="immagini/broadsky.webp" alt="Jacob Broadsky" class="character-photo">
+            <div class="character-info">
+                <h2>Jacob Broadsky</h2>
+                <p>
+                    Ex cecchino dell'FBI e mentore di Booth, Broadsky diventa un vigilante omicida 
+                    convinto di “fare giustizia” eliminando criminali. La sua abilità lo rende uno 
+                    degli avversari più difficili da fermare.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pelant -->
+    <section class="character-card">
+        <div class="character-header">
+            <img src="immagini/pelant.webp" alt="Christopher Pelant" class="character-photo">
+            <div class="character-info">
+                <h2>Christopher Pelant</h2>
+                <p>
+                    Genio dell'informatica e uno dei villain più iconici della serie. Pelant manipola 
+                    sistemi, crea false prove e colpisce il team dall'interno, mettendo in crisi la 
+                    vita personale e professionale di Brennan e Booth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
 </body>
+</html>
